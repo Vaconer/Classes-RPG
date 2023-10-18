@@ -1,0 +1,119 @@
+/* Estiliza o corpo do documento */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza o cabeçalho */
+header {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Estiliza a seção principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Desce a imagem devagar*/
+main *{
+  transition-duration: 500ms;
+}
+
+/* Estiliza as imagens dentro dos cartões */
+.class-card img {
+  width: 100%;
+  height: 450px;
+  min-height: 450px;
+  object-fit: fill; /* Faz a imagem cobrir a div */
+  object-position: center top; /*posiciona a imagem no centro superior */
+}
+
+/* Estiliza o nome das classes de personagens */
+.class-card h2 {
+  margin: 10px 0;
+  display: none; /* Oculta o nome por padrão */
+}
+
+/* Estiliza a descrição das classes de personagens */
+.class-card p {
+  color: #777;
+  display: none; /* Oculta a descrição por padrão */
+}
+
+/* Exibe o nome e a descrição das classes de personagens quando o mouse estiver sobre o cartão */
+.class-card:hover h2,
+.class-card:hover p {
+  display: block;
+}
+
+/* Estiliza o rodapé */
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Reaproveita as regras de estilo para .class-list e .class-card, definindo a largura máxima e flexibilidade dos cartões */
+.class-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.class-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: 20%; /* Define a largura máxima das imagens como 80% do tamanho original */
+  height: 500px; /* Ajusta automaticamente a altura para manter a proporção da imagem */
+}
+
+/* Estiliza o botão de ataque */
+.attack-button {
+  background-color: #4e4e4e; /* Cor de fundo vermelha */
+  color: #fff; /* Cor do texto branco */
+  padding: 10px 20px; /* Preenchimento interno do botão */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  display: block; /* Torna o botão um elemento de bloco para centralizá-lo */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  border-radius: 10%;
+  z-index: 1;
+}
+
+/* Estiliza o botão de ataque quando o mouse estiver sobre ele */
+.attack-button:hover {
+  background-color: #1b1b1b; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estiliza os cartões quando o mouse estiver sobre eles */
+.class-card:hover {
+  height: 650px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  /*transform: scale(1.1);*/
+}
+
+/* Estiliza o rodapé, definindo a cor de fundo, a cor do texto e centralizando o texto. */
+.footer {
+  background-color: #252525; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center; /* Alinhamento do texto no centro */
+  padding: 5px 0; /* Preenchimento superior e inferior reduzido */
+  font-size: 14px; /* Tamanho da fonte reduzido */
+}
